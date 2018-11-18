@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <title>Nadchodzą Święta</title>
-    <style>
-            body {background-color: brown;}
-            h1 {color: black;}
-            p {color: white;}
-        </style>
-</head>
-<body>
+{% extends 'blog/base.html' %}
+{% block content %}
 
 <div>
     <h1>JUŻ NIEDŁUGO ŚWIĘTA !!!</h1>
@@ -18,7 +7,7 @@
 
 
 <p>Autor: Angelika Maciejewska</p>
-<P>Prezenty bożonarodzeniowe zawsze są wyjątkowe gdyż obdarzamy nimi bliskie osoby. Prezenty gwiazdkowe
+<p><i>Prezenty bożonarodzeniowe zawsze są wyjątkowe gdyż obdarzamy nimi bliskie osoby. Prezenty gwiazdkowe
     powinny być dopasowane indywidualnie. Filiżanki czy bogaty zbiór zestawów do grzanego wina to zdecydowanie
     trafne prezenty świąteczne dla wielbicieli długich zimowych wieczorów, spędzonych przy aromatycznej kawie
     czy rozgrzewającej czekoladzie. Prezenty na gwiazdkę dla dziecka to nie lada wyzwanie. Dla młodszych
@@ -26,7 +15,7 @@
     Artykuły umożliwiające niezwykłe aranżacje wnętrz, np. naklejki ścienne czy lampki choinkowe
     to również doskonałe prezenty na święta dla małych odkrywców. Prezenty na święta
     bożego narodzenia warto ładnie zapakować i umieścić pod choinką, aby ich rozpakowywaniu
-    towarzyszyła ciepła i rodzinna atmosfera. </P>
+    towarzyszyła ciepła i rodzinna atmosfera. </i>i></p>
 <figure>
     <img src="http://www.drukarnia102.pl/up_files/sklep/110_kartki-firmowe-na-%C5%9Bwi%C4%99ta_s.jpg">
     <figcaption>Święta Bożego Narodzenia</figcaption></figure>
@@ -49,7 +38,4 @@
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 {% endfor %}
-
-
-</body>
-</html>
+{% endblock %}
