@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>Nadchodzą Święta</title>
+    <style>
+            body {background-color: lightgreen;}
+            h1 {color: black;}
+            p {color: white;}
+        </style>
+</head>
+<body>
+
+<div>
+    <h1>JUŻ NIEDŁUGO ŚWIĘTA !!!</h1>
+</div>
+
+
+<p>Autor: Angelika Maciejewska</p>
+<P>Prezenty bożonarodzeniowe zawsze są wyjątkowe gdyż obdarzamy nimi bliskie osoby. Prezenty gwiazdkowe
+    powinny być dopasowane indywidualnie. Filiżanki czy bogaty zbiór zestawów do grzanego wina to zdecydowanie
+    trafne prezenty świąteczne dla wielbicieli długich zimowych wieczorów, spędzonych przy aromatycznej kawie
+    czy rozgrzewającej czekoladzie. Prezenty na gwiazdkę dla dziecka to nie lada wyzwanie. Dla młodszych
+    miłośników gotowania proponujemy zestawy do dekoracji ciasteczek oraz wiele innych inspirujących produktów.
+    Artykuły umożliwiające niezwykłe aranżacje wnętrz, np. naklejki ścienne czy lampki choinkowe
+    to również doskonałe prezenty na święta dla małych odkrywców. Prezenty na święta
+    bożego narodzenia warto ładnie zapakować i umieścić pod choinką, aby ich rozpakowywaniu
+    towarzyszyła ciepła i rodzinna atmosfera. </P>
+<figure>
+    <img src="https://i.przedszkola.edu.pl/s7/490/114-spektakl-ta-cz-ca-choinka-w-krakowie.png">
+    <figcaption>Choinka</figcaption></figure>
+
+
+<h2>Kilka pomysłów na zapakowanie prezentów</h2>
+
+<p>Tradycja dawania sobie prezentów jest piękna – pozwala dać komuś dużo radości i to właśnie uwielbiam.
+    Dla mnie wybieranie i pakowanie prezentów jest przyjemniejsze niż dostawanie ich.
+    Uważam, że prawie tak samo ważne jest to, w jaki sposób wręczamy prezent. Łatwo dostępne torebki prezentowe są
+    szybkie do zastosowania i mogą być wielokrotnego użytku, to zdecydowanie tracą względem
+    samodzielnie przygotowanych opakowań. Własnoręczne pakowanie prezentów wymaga pomyślunku, pomysłu,
+    przygotowania i włożenia wysiłku i właśnie to jest piękne!</p>
+<img src="http://zcukruniejestem.pl/wp-content/uploads/2016/12/ss2.jpg">
+
+{% for post in posts %}
+<div>
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
+
+
+</body>
+</html>
